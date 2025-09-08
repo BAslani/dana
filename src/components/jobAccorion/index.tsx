@@ -102,34 +102,6 @@ export default function JobAccordion() {
         </JobPosition>
       </div>
       <div className='absolute right-0 top-1/2 size-32 rounded-full bg-blue-600 blur-3xl'></div>
-      <Image
-        className='absolute left-0 top-0 blur-[2px]  '
-        src={`/svg/circle-lines-jobs.svg`}
-        width={110}
-        height={110}
-        alt=''
-      />
-      <Image
-        className='absolute -left-6 top-1/2  w-auto blur-[2px]  '
-        src={`/studios/venture/cube.png`}
-        width={50}
-        height={50}
-        alt=''
-      />
-      <Image
-        className='absolute right-0 top-0  w-auto blur-[2px]  '
-        src={`/studios/tech/cube.png`}
-        width={50}
-        height={50}
-        alt=''
-      />
-      <Image
-        className='absolute bottom-10 right-0  w-auto blur-[2px]  '
-        src={`/studios/media/cube.png`}
-        width={50}
-        height={50}
-        alt=''
-      />
     </section>
   )
 }

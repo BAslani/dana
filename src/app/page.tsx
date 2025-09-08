@@ -31,7 +31,7 @@ export default async function page() {
       <OurTeam />
       <GetInTouch />
       <JobAccordion />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }
