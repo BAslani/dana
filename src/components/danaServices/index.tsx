@@ -61,8 +61,8 @@ export default function DanaServices({ hasDiagonal }: Props) {
 
       {/* content */}
       <div className='mx-auto max-w-screen-lg text-gray-50'>
-        <div className='px-[24px] sm:px-[80px] md:px-[140px] lg:px-[240px]'>
-          <h1 className='my-10 text-center font-goldman text-heading-S-2 leading-[19px] sm:text-heading-M-3 sm:leading-[24px] md:text-heading-L-3 md:leading-[28px] lg:mb-10 lg:mt-0 lg:text-heading-XL-3 lg:leading-[43px]'>
+        <div className='px-6'>
+          <h1 className='my-10 text-center leading-[19px] sm:leading-[24px] md:leading-[28px] lg:mb-10 lg:mt-0 lg:leading-[43px]'>
             <span style={{ color: verntureService.theme }}>Vizhen</span>{' '}
             Services
           </h1>

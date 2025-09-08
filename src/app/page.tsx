@@ -19,7 +19,7 @@ export default async function page() {
       {/* <AboutUsHero /> */}
       <AboutUsInfo />
       <AboutUsIntro />
-      {/* <DanaServices hasDiagonal={false} /> */}
+      <DanaServices hasDiagonal={false} />
       {/* <div className='my-20 flex flex-col gap-10'>
         <Clients DefaultStudio={'venture'} />
         <Clients DefaultStudio={'tech'} />
