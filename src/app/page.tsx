@@ -13,23 +13,22 @@ export default async function page() {
   return (
     <div className='bg-black'>
       <Navbar />
-      <DataCenterBanner />
-      <div className='h-50'></div>
+      {/* <DataCenterBanner /> */}
       {/* <AboutUsHero /> */}
       {/* <AboutUsInfo /> */}
-      <AboutUsIntro />
-      <DanaServices hasDiagonal={false} />
-      <div className='my-20 flex flex-col gap-10'>
+      {/* <AboutUsIntro /> */}
+      {/* <DanaServices hasDiagonal={false} /> */}
+      {/* <div className='my-20 flex flex-col gap-10'>
         <Clients DefaultStudio={'venture'} />
         <Clients DefaultStudio={'tech'} />
         <Clients DefaultStudio={'media'} />
-      </div>
-      <OtherBrands />
+      </div> */}
+      {/* <OtherBrands /> */}
       {/* <TimeLine /> */}
-      <OurTeam />
-      <GetInTouch />
-      <JobAccordion />
-      <Footer />
+      {/* <OurTeam /> */}
+      {/* <GetInTouch /> */}
+      {/* <JobAccordion /> */}
+      {/* <Footer /> */}
     </div>
   )
 }
