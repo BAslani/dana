@@ -29,7 +29,7 @@ export default async function page() {
       <OtherBrands />
       <TimeLine />
       <OurTeam />
-      {/* <GetInTouch /> */}
+      <GetInTouch />
       {/* <JobAccordion /> */}
       {/* <Footer /> */}
     </div>
