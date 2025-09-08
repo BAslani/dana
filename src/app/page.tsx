@@ -30,7 +30,7 @@ export default async function page() {
       <TimeLine />
       <OurTeam />
       <GetInTouch />
-      {/* <JobAccordion /> */}
+      <JobAccordion />
       {/* <Footer /> */}
     </div>
   )
