@@ -18,7 +18,7 @@ export default async function page() {
       <DataCenterBanner />
       {/* <AboutUsHero /> */}
       <AboutUsInfo />
-      {/* <AboutUsIntro /> */}
+      <AboutUsIntro />
       {/* <DanaServices hasDiagonal={false} /> */}
       {/* <div className='my-20 flex flex-col gap-10'>
         <Clients DefaultStudio={'venture'} />
