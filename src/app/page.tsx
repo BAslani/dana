@@ -1,4 +1,6 @@
+import AboutUsInfo from '@/components/aboutUs/AboutUsInfo'
 import AboutUsIntro from '@/components/aboutUs/AboutUsIntro'
+import AboutUsHero from '@/components/aboutUsHero'
 import Clients from '@/components/Clients'
 import DanaServices from '@/components/danaServices'
 import Footer from '@/components/footer/Index'
@@ -15,7 +17,7 @@ export default async function page() {
       <Navbar />
       <DataCenterBanner />
       {/* <AboutUsHero /> */}
-      {/* <AboutUsInfo /> */}
+      <AboutUsInfo />
       {/* <AboutUsIntro /> */}
       {/* <DanaServices hasDiagonal={false} /> */}
       {/* <div className='my-20 flex flex-col gap-10'>
