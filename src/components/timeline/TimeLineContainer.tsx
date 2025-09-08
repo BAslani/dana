@@ -1,9 +1,7 @@
-import classNames from 'classnames'
 import { motion } from 'framer-motion'
 
 type Props = {
   year: number
-  currentYear: number
 }
 
 const timlineProjects = [
@@ -56,59 +54,55 @@ const timlineProjects = [
   },
 ]
 
-export default function TimeLineContainer({ year, currentYear }: Props) {
+export default function TimeLineContainer({ year }: Props) {
+  const projects = timlineProjects.find((p) => p.year === year)?.projects ?? []
+
   return (
-    <div
-      key={currentYear}
-      className={classNames(
-        'flex items-center justify-center gap-3 duration-1000 transition-all',
-        +currentYear === year ? 'opacity-100' : 'opacity-0'
-      )}
+    <motion.div
+      key={year}
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -40 }}
+      transition={{ duration: 0.6, ease: 'easeInOut' }}
+      className='flex flex-col items-center gap-6'
     >
-      <motion.div
-        key={year}
-        initial={{ opacity: 0, transform: 'translatex(-80%)' }}
-        animate={{ opacity: 1, transform: 'translatex(0)' }}
-        transition={{ duration: 2.4 }}
-      >
-        <p className='w-10 text-yellow-500 sm:w-14 md:w-28'>{currentYear}</p>
-      </motion.div>
-      <div className='grow  rounded-3xl border border-gray-600 bg-gray-950 '>
+      <p className='text-yellow-500 text-xl md:text-2xl'>{year}</p>
+
+      <div className='w-full rounded-3xl border border-gray-600 bg-gray-950 p-6'>
         {/* desktop */}
-        <div className='hidden grid-cols-3 grid-rows-3 justify-items-start gap-2  p-[24px] sm:grid md:pl-[40px]'>
-          {timlineProjects
-            .find((yearProjects) => yearProjects.year === year)
-            ?.projects.map((project, idx) => (
-              <div key={idx} className='flex items-center gap-2'>
-                <motion.div
-                  key={year}
-                  initial={{
-                    opacity: 0,
-                    transform: 'translatex(-110%) scale(1.9) skew(10deg)',
-                  }}
-                  animate={{ opacity: 1, transform: 'translatex(0) scale(1)' }}
-                  transition={{ duration: 3.2 }}
-                >
-                  <span className='text-blue-500'>&#x2B22;</span>
-                </motion.div>
-                <p className='font-railway text-body-M-2 md:text-body-L-2 lg:text-body-XL-2'>
-                  {project}
-                </p>
-              </div>
-            ))}
+        <div className='hidden sm:grid grid-cols-3 gap-4'>
+          {projects.map((project, idx) => (
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: idx * 0.05 }}
+              className='flex items-center gap-2'
+            >
+              <span className='text-blue-500'>&#x2B22;</span>
+              <p className='font-railway text-body-M-2 md:text-body-L-2 lg:text-body-XL-2'>
+                {project}
+              </p>
+            </motion.div>
+          ))}
         </div>
+
         {/* mobile */}
-        <div className='grid grid-cols-1 grid-rows-6 gap-4 justify-self-start py-[24px] pl-[31px] sm:hidden'>
-          {timlineProjects
-            .find((yearProjects) => yearProjects.year === year)
-            ?.projects.map((project, idx) => (
-              <div key={idx} className='flex items-center gap-2 '>
-                <span className='text-blue-500'>&#x2B22;</span>
-                <p className='font-railway text-body-S-2'>{project}</p>
-              </div>
-            ))}
+        <div className='grid sm:hidden gap-3'>
+          {projects.map((project, idx) => (
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: idx * 0.05 }}
+              className='flex items-center gap-2'
+            >
+              <span className='text-blue-500'>&#x2B22;</span>
+              <p className='font-railway text-body-S-2'>{project}</p>
+            </motion.div>
+          ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }

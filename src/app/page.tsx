@@ -1,4 +1,6 @@
+import AboutUsInfo from '@/components/aboutUs/AboutUsInfo'
 import AboutUsIntro from '@/components/aboutUs/AboutUsIntro'
+import AboutUsHero from '@/components/aboutUsHero'
 import Clients from '@/components/Clients'
 import DanaServices from '@/components/danaServices'
 import Footer from '@/components/footer/Index'
@@ -8,15 +10,15 @@ import DataCenterBanner from '@/components/motion/Banner'
 import Navbar from '@/components/navbar'
 import OtherBrands from '@/components/otherBrands/Index'
 import OurTeam from '@/components/ourTeam'
+import TimeLine from '@/components/timeline'
 
 export default async function page() {
   return (
     <div className='bg-black'>
       <Navbar />
       <DataCenterBanner />
-      <div className='h-50'></div>
       {/* <AboutUsHero /> */}
-      {/* <AboutUsInfo /> */}
+      <AboutUsInfo />
       <AboutUsIntro />
       <DanaServices hasDiagonal={false} />
       <div className='my-20 flex flex-col gap-10'>
@@ -25,7 +27,7 @@ export default async function page() {
         <Clients DefaultStudio={'media'} />
       </div>
       <OtherBrands />
-      {/* <TimeLine /> */}
+      <TimeLine />
       <OurTeam />
       <GetInTouch />
       <JobAccordion />

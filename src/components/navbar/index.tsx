@@ -34,13 +34,13 @@ export default function Navbar() {
     <div className='fixed z-50 w-full'>
       <nav
         className={classNames(
-          'transition-all duration-300 w-full px-6 sm:px-20 md:px-[140px]',
+          'transition-all duration-300 w-full px-6',
           isSticky
             ? 'py-3 sm:py-2 md:py-4 bg-black/60 backdrop-blur-md'
             : 'sm:py-6 md:py-10 py-6'
         )}
       >
-        <div className='mx-auto flex flex-row items-center justify-between px-4 py-2 sm:px-6 sm:py-4 md:max-w-screen-md lg:max-w-screen-lg'>
+        <div className='mx-auto flex flex-row items-center justify-between md:max-w-screen-lg'>
           <Link
             scroll={false}
             href={'/'}
@@ -54,14 +54,12 @@ export default function Navbar() {
             />
           </Link>
           <div className='hidden md:block'>
-            <NavLinks onLink={() => {}} />
+            <NavLinks />
           </div>
           <div>
             <div className='hidden md:block md:w-36 lg:w-48'>
               <ButtonSkewed
-                onClick={() => {
-                  router.push('contact-us')
-                }}
+                onClick={() => console.log('clicked')}
                 bgColor='blue300'
                 textColor='gray950'
                 title='Get in touch'

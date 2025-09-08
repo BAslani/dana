@@ -16,7 +16,7 @@ export default function GlassStartupCard({ studio }: Props) {
     media: mediaList,
   }
   return (
-    <div className='relative mb-10 mt-[110px]'>
+    <div className='relative mb-10 mt-[120px]'>
       <Image
         src={`/studios/${studio}/cube.png`}
         className='absolute left-1/2 top-[-90px] -translate-x-1/2 lg:top-[-100px] lg:scale-150'

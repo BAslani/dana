@@ -11,8 +11,8 @@ import { logos } from './data'
 export default function OtherBrands() {
   return (
     <div className='overflow-x-hidden'>
-      <div className='mx-auto max-w-screen-lg sm:px-[80px] md:px-[200px] lg:px-[240px]'>
-        <h1 className='pb-2 text-center font-goldman text-heading-S-2 text-gray-50 sm:text-heading-M-2 md:text-heading-L-2 lg:text-heading-XL-2'>
+      <div className='mx-auto max-w-screen-lg'>
+        <h1 className='pb-2 text-center sm:text-lg md:text-2xl lg:text-3xl text-gray-50 sm:text-heading-M-2 md:text-heading-L-2 lg:text-heading-XL-2'>
           Our <span className='text-blue-500'>Partners</span>
         </h1>
         <div className='flex items-center justify-around sm:py-4 lg:py-8'>
