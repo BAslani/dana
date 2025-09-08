@@ -20,11 +20,11 @@ export default async function page() {
       <AboutUsInfo />
       <AboutUsIntro />
       <DanaServices hasDiagonal={false} />
-      {/* <div className='my-20 flex flex-col gap-10'>
+      <div className='my-20 flex flex-col gap-10'>
         <Clients DefaultStudio={'venture'} />
         <Clients DefaultStudio={'tech'} />
         <Clients DefaultStudio={'media'} />
-      </div> */}
+      </div>
       {/* <OtherBrands /> */}
       {/* <TimeLine /> */}
       {/* <OurTeam /> */}
