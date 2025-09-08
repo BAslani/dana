@@ -10,6 +10,7 @@ import DataCenterBanner from '@/components/motion/Banner'
 import Navbar from '@/components/navbar'
 import OtherBrands from '@/components/otherBrands/Index'
 import OurTeam from '@/components/ourTeam'
+import TimeLine from '@/components/timeline'
 
 export default async function page() {
   return (
@@ -26,7 +27,7 @@ export default async function page() {
         <Clients DefaultStudio={'media'} />
       </div>
       <OtherBrands />
-      {/* <TimeLine /> */}
+      <TimeLine />
       {/* <OurTeam /> */}
       {/* <GetInTouch /> */}
       {/* <JobAccordion /> */}
