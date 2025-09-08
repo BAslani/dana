@@ -15,12 +15,13 @@ export default function DataCenterBanner() {
 
     // Camera
     const camera = new THREE.PerspectiveCamera(
-      30,
+      45,
       mountRef.current.clientWidth / mountRef.current.clientHeight,
       0.1,
       1000
     )
-    camera.position.set(5, 6, 10)
+    camera.position.set(8, 3, 12)
+    camera.lookAt(0, 0, 0)
 
     // Renderer
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true })
@@ -29,6 +30,7 @@ export default function DataCenterBanner() {
       mountRef.current.clientHeight
     )
     renderer.setPixelRatio(window.devicePixelRatio)
+    renderer.setClearColor(0x000000, 0)
     mountRef.current.appendChild(renderer.domElement)
 
     // Lights
@@ -71,7 +73,7 @@ export default function DataCenterBanner() {
     const group = new THREE.Group()
 
     // Create grid of racks with LED panels
-    const rows = 3
+    const rows = 4
     const cols = 8
     for (let i = 0; i < rows; i++) {
       for (let j = 0; j < cols; j++) {
@@ -101,7 +103,7 @@ export default function DataCenterBanner() {
     // Floor plane (for subtle reflection look)
     const floorGeometry = new THREE.PlaneGeometry(100, 100)
     const floorMaterial = new THREE.MeshStandardMaterial({
-      color: 0x0a0a0a,
+      color: 0x000000,
       metalness: 0.9,
       roughness: 0.5,
     })
@@ -151,5 +153,5 @@ export default function DataCenterBanner() {
     }
   }, [])
 
-  return <div ref={mountRef} className='w-full h-[300px]' />
+  return <div ref={mountRef} className='w-full h-96 pt-40' />
 }
