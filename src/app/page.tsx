@@ -28,7 +28,7 @@ export default async function page() {
       </div>
       <OtherBrands />
       <TimeLine />
-      {/* <OurTeam /> */}
+      <OurTeam />
       {/* <GetInTouch /> */}
       {/* <JobAccordion /> */}
       {/* <Footer /> */}

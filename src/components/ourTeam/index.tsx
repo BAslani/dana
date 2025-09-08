@@ -27,7 +27,7 @@ export default function OurTeam() {
     <section className='bg-black'>
       <div className='mx-auto max-w-screen-lg overflow-x-hidden py-10'>
         <div className='flex items-center justify-center'>
-          <h1 className='mb-8 inline-block border-b border-b-gray-950 text-center font-goldman text-heading-S-2 leading-[19px] text-white sm:text-heading-M-3 sm:leading-[24px] md:text-heading-L-3 md:leading-[28px] lg:text-heading-XL-3 lg:leading-[43px] '>
+          <h1 className='mb-8 inline-block border-b border-b-gray-950 text-center leading-[19px] text-white sm:leading-[24px] md:leading-[28px] lg:leading-[43px] text-lg md:text-xl lg:text-2xl'>
             Our <span className='text-blue-400'>Team</span>
           </h1>
         </div>
@@ -44,7 +44,7 @@ export default function OurTeam() {
           {/* carousel */}
           <div className='relative max-w-[345px] sm:max-w-[584px] md:max-w-[1000px] lg:max-w-[1440px]'>
             {/* floading shapeds around carousel : */}
-            <Image
+            {/* <Image
               src={'/svg/dotts.svg'}
               alt='dotts'
               width={70}
@@ -57,9 +57,7 @@ export default function OurTeam() {
               width={70}
               height={70}
               className='absolute -bottom-6 -right-6 z-10 hidden sm:block'
-            />
-            <div className='absolute -right-20 -top-20 size-52 rounded-full bg-[#3040E4] opacity-30 blur-3xl'></div>
-            <div className='absolute -left-20 -top-20 size-52 rounded-full bg-[#3040E4] opacity-30 blur-3xl'></div>
+            /> */}
             {/* floading shapeds around carousel : */}
 
             <TeamCarousel
