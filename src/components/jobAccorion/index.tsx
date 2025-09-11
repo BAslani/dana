@@ -98,7 +98,6 @@ export default function JobAccordion() {
           </ul>
         </JobPosition>
       </div>
-      <div className='absolute right-0 top-1/2 size-32 rounded-full bg-blue-600 blur-3xl'></div>
     </section>
   )
 }

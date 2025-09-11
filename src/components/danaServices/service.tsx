@@ -39,8 +39,7 @@ export default function Service({
   const revDeg = useTransform(scrollYProgress, [1, 0], [360, 0])
   const springDeg = useSpring(deg, spring)
   const springRevDeg = useSpring(revDeg, spring)
-  const { cubeImg, title, description, icons, theme } =
-    serviceDetails
+  const { cubeImg, title, description, icons, theme } = serviceDetails
   return (
     <div
       className={classNames(
@@ -58,7 +57,7 @@ export default function Service({
       <div
         className={classNames(
           'h-full w-full bg-blue-900/20 rounded-lg bg-clip-padding backdrop-filter backdrop-blur-sm flex flex-col items-center  border border-blue-900 p-[24px] sm:px-[24px] sm:py-[40px] lg:py-[50px] lg:px-[40px]',
-          title === 'Venture'
+          title === 'designAndImplementationService'
             ? 'sm:flex-row md:gap-[64px] sm:gap-[48px] lg:gap-[79px]'
             : 'md:flex-row gap-[24px] md:gap-[50px]'
         )}

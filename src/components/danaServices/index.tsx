@@ -1,12 +1,14 @@
 'use client'
 
 import { useScroll } from 'framer-motion'
-import Image from 'next/image'
 import { useRef } from 'react'
 
-import classNames from 'classnames'
 import ScrollDownButton from '../UI/buttons/ScrollDownButton'
-import { mediaService, techService, verntureService } from './data'
+import {
+  consultancy,
+  designAndImplementationService,
+  maintenance,
+} from './data'
 import Service from './service'
 
 type Props = {
@@ -15,6 +17,7 @@ type Props = {
 export default function DanaServices({ hasDiagonal }: Props) {
   const target = useRef(null)
   const { scrollYProgress } = useScroll()
+
   return (
     <section
       id='services'
@@ -23,20 +26,6 @@ export default function DanaServices({ hasDiagonal }: Props) {
     >
       {/* floating shapes */}
       <div className='relative mx-auto  max-w-screen-lg '>
-        <Image
-          src={'/svg/rect-big.svg'}
-          width={1920}
-          height={30}
-          alt='bg'
-          className={classNames(hasDiagonal ? 'hidden md:block' : 'hidden')}
-        />
-        <Image
-          src={'/svg/rect-sm.svg'}
-          width={1920}
-          height={30}
-          alt='bg'
-          className={classNames(hasDiagonal ? 'md:hidden' : 'hidden')}
-        />
         <div
           style={{ display: hasDiagonal ? '' : 'none' }}
           className='absolute left-0 top-0 z-[-1] hidden size-[50rem] rounded-full bg-[#3040E4] opacity-25 blur-[150px] md:block'
@@ -59,10 +48,13 @@ export default function DanaServices({ hasDiagonal }: Props) {
       <div className='mx-auto max-w-screen-lg text-gray-50'>
         <div className='px-6'>
           <h1 className='my-10 text-center text-xl md:text-2xl lg:text-3xl leading-[19px] sm:leading-[24px] md:leading-[28px] lg:mb-10 lg:leading-[43px]'>
-            <span style={{ color: verntureService.theme }}>Dana</span> Services
+            <span style={{ color: designAndImplementationService.theme }}>
+              Dana
+            </span>{' '}
+            Services
           </h1>
           <Service
-            serviceDetails={verntureService}
+            serviceDetails={designAndImplementationService}
             scrollYProgress={scrollYProgress}
           />
           <div className='my-5 flex items-center justify-center'>
@@ -70,11 +62,11 @@ export default function DanaServices({ hasDiagonal }: Props) {
           </div>
           <div className='grid grid-cols-1 grid-rows-1 gap-[40px] sm:grid-cols-2 lg:gap-[70px] '>
             <Service
-              serviceDetails={techService}
+              serviceDetails={maintenance}
               scrollYProgress={scrollYProgress}
             />
             <Service
-              serviceDetails={mediaService}
+              serviceDetails={consultancy}
               scrollYProgress={scrollYProgress}
             />
           </div>
