@@ -23,11 +23,11 @@ export default async function page() {
         <Clients DefaultStudio={'accreditors'} />
         <Clients DefaultStudio={'partnerships'} />
       </div>
-      <OtherBrands />
+      {/* <OtherBrands />
       <TimeLine />
       <OurTeam />
       <JobAccordion />
-      <Footer />
+      <Footer /> */}
     </div>
   )
 }
