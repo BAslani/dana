@@ -1,11 +1,8 @@
-import Image from 'next/image'
-import React from 'react'
-
 import JobPosition from './jobPositions'
 
 export default function JobAccordion() {
   return (
-    <section className='relative overflow-hidden'>
+    <section id='careers' className='relative overflow-hidden'>
       <h1 className='mb-5 text-center text-lg md:text-xl lg:text-2xl text-blue-300'>
         Job position
       </h1>

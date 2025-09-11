@@ -17,9 +17,9 @@ export default function DanaServices({ hasDiagonal }: Props) {
   const { scrollYProgress } = useScroll()
   return (
     <section
+      id='services'
       ref={target}
-      className=
-      'relative z-10 overflow-x-hidden pb-10'
+      className='relative z-10 overflow-x-hidden pb-10'
     >
       {/* floating shapes */}
       <div className='relative mx-auto  max-w-screen-lg '>
@@ -59,8 +59,7 @@ export default function DanaServices({ hasDiagonal }: Props) {
       <div className='mx-auto max-w-screen-lg text-gray-50'>
         <div className='px-6'>
           <h1 className='my-10 text-center text-xl md:text-2xl lg:text-3xl leading-[19px] sm:leading-[24px] md:leading-[28px] lg:mb-10 lg:leading-[43px]'>
-            <span style={{ color: verntureService.theme }}>Dana</span>{' '}
-            Services
+            <span style={{ color: verntureService.theme }}>Dana</span> Services
           </h1>
           <Service
             serviceDetails={verntureService}

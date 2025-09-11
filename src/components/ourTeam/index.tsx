@@ -24,7 +24,7 @@ export default function OurTeam() {
   }, [])
 
   return (
-    <section>
+    <section id='our_team'>
       <div className='mx-auto max-w-screen-lg overflow-x-hidden py-10'>
         <div className='flex items-center justify-center'>
           <h1 className='mb-8 inline-block border-b border-b-gray-950 text-center leading-[19px] text-white sm:leading-[24px] md:leading-[28px] lg:leading-[43px] text-lg md:text-xl lg:text-2xl'>

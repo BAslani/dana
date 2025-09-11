@@ -1,22 +1,22 @@
 export const navLinkList = [
   {
     title: 'About Us',
-    href: '/about-us',
+    href: '#about_us',
   },
   {
     title: 'Services',
-    href: `/services`,
+    href: `#services`,
   },
   {
-    title: 'Tech Studio',
-    href: `/tech`,
+    title: 'Experiences',
+    href: `#experiences`,
   },
   {
-    title: 'Media Studio',
-    href: `/media`,
+    title: 'Our Team',
+    href: '#our_team',
   },
   {
-    title: 'Blog',
-    href: '/blogs',
+    title: 'Careers',
+    href: '#careers',
   },
 ]

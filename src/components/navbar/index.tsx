@@ -31,6 +31,7 @@ export default function Navbar() {
   return (
     <div className='fixed z-50 w-full'>
       <nav
+        id='site-header'
         className={classNames(
           'transition-all duration-300 w-full px-6',
           isSticky

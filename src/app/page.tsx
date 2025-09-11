@@ -1,10 +1,8 @@
 import AboutUsInfo from '@/components/aboutUs/AboutUsInfo'
 import AboutUsIntro from '@/components/aboutUs/AboutUsIntro'
-import AboutUsHero from '@/components/aboutUsHero'
 import Clients from '@/components/Clients'
 import DanaServices from '@/components/danaServices'
 import Footer from '@/components/footer/Index'
-import GetInTouch from '@/components/getInTouch'
 import JobAccordion from '@/components/jobAccorion'
 import DataCenterBanner from '@/components/motion/Banner'
 import Navbar from '@/components/navbar'
@@ -14,14 +12,13 @@ import TimeLine from '@/components/timeline'
 
 export default async function page() {
   return (
-      <div className='bg-gradient-to-b from-0% to-20% from-black to-[#0b3157]'>
+    <div className='bg-gradient-to-b from-0% to-20% from-black to-[#0b3157]'>
       <Navbar />
       <DataCenterBanner />
-      {/* <AboutUsHero /> */}
       <AboutUsInfo />
       <AboutUsIntro />
       <DanaServices hasDiagonal={false} />
-      <div className='my-20 flex flex-col gap-10'>
+      <div id='experiences' className='my-20 flex flex-col gap-10'>
         <Clients DefaultStudio={'experiences'} />
         <Clients DefaultStudio={'accreditors'} />
         <Clients DefaultStudio={'partenships'} />
@@ -29,7 +26,6 @@ export default async function page() {
       <OtherBrands />
       <TimeLine />
       <OurTeam />
-      <GetInTouch />
       <JobAccordion />
       <Footer />
     </div>
