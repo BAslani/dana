@@ -18,7 +18,7 @@ export default function JobPosition({ title, children }: Props) {
     setIsOpen((val) => !val)
   }
   return (
-    <div className='bg-gray-900 text-white'>
+    <div className=' text-white border'>
       <button
         onClick={onToggleAccordion}
         className='flex w-full items-center justify-between p-5 text-[30px]'

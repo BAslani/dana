@@ -3,7 +3,6 @@
 import classNames from 'classnames'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
 
 import ButtonSkewed from '../UI/buttons/ButtonSkewed'
@@ -13,7 +12,6 @@ import SideBar from './components/SideBar'
 export default function Navbar() {
   const [isSticky, setIsSticky] = useState(false)
   const [showDrawer, setShowDrawer] = useState(false)
-  const router = useRouter()
 
   const changeHeaderStyle = () => {
     const scrollTop = window.scrollY
@@ -50,7 +48,7 @@ export default function Navbar() {
               alt='logo'
               width={200}
               height={45}
-              src={'/png/vizhen-logo.png'}
+              src={'/png/Dana-logo.png'}
             />
           </Link>
           <div className='hidden md:block'>

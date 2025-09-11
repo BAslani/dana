@@ -5,57 +5,33 @@ import classNames from 'classnames'
 import GlassStartupCard from './components/GlassStartupCard'
 
 type Props = {
-  DefaultStudio?: string
+  DefaultStudio?: 'experiences' | 'accreditors' | 'partenships'
 }
 
-export default function Clients({ DefaultStudio = 'venture' }: Props) {
+export default function Clients({ DefaultStudio = 'experiences' }: Props) {
   const selectedStudio = DefaultStudio
   return (
     <div className='px-6 md:pt-20 lg:px-0'>
       <div className='mb-4 text-center text-white md:px-[200px] lg:mx-auto lg:w-[580px] lg:px-0'>
         <h3 className='text-xl md:text-2xl lg:text-3xl'>
-          {selectedStudio === 'venture' && (
+          {selectedStudio === 'experiences' && (
             <p>
-              <span className='text-blue-500'>Venture Studio</span> Startups
+              <span className='text-white'>Experiences</span>
             </p>
           )}
-          {selectedStudio === 'tech' && (
+          {selectedStudio === 'accreditors' && (
             <p>
-              <span className='text-green-500'>Tech Studio</span> Projects
+              <span className='text-white'>Accreditors</span>
             </p>
           )}
-          {selectedStudio === 'media' && (
+          {selectedStudio === 'partenships' && (
             <p>
-              <span className='text-yellow-500'>Media Studio</span> Projects
+              <span className='text-white'>Partnerships</span>
             </p>
           )}
         </h3>
-        <p className='m-4'>
-          {selectedStudio === 'venture' &&
-            'We empower visionaries to bring their ideas to life and ignite their startup journey'}
-          {selectedStudio === 'tech' &&
-            'From concept to execution, we engineer solutions that surpass expectations'}
-          {selectedStudio === 'media' &&
-            'Crafting your brand story, we bring your brand to life'}
-        </p>
       </div>
       <GlassStartupCard studio={DefaultStudio} />
-      <div className='mb-4 text-center text-white md:px-[200px] lg:mx-auto lg:w-[580px] lg:px-0'>
-        <button
-          className={classNames(
-            'mt-2 px-4 py-2 sm:px-8 md:px-12 text-black md:text-body-XL-1 lg:text-body-XL-2',
-            {
-              'bg-blue-300': DefaultStudio === 'venture',
-              'bg-green-500': DefaultStudio === 'tech',
-              'bg-yellow-500': DefaultStudio === 'media',
-            }
-          )}
-        >
-          {DefaultStudio === 'venture' && 'Begin your startup journey'}
-          {DefaultStudio === 'tech' && 'Start your tech project'}
-          {DefaultStudio === 'media' && 'Breathe life into your brand'}
-        </button>
-      </div>
     </div>
   )
 }

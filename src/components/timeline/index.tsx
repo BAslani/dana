@@ -9,13 +9,13 @@ import TimeLineContainer from './TimeLineContainer'
 export default function TimeLine() {
   const [activeYear, setActiveYear] = useState(2024)
   return (
-    <section className='relative bg-black'>
+    <section className='relative'>
       <div className='mx-auto max-w-screen-lg py-20'>
         <h1 className='pb-2 text-center font-goldman text-gray-50 sm:text-heading-M-2 md:text-heading-L-2 lg:text-heading-XL-2'>
           {/* title section */}
           <div className='mb-12 flex items-center justify-center gap-0 sm:mb-20 md:gap-3'>
             <p className='text-heading-S-2 md:text-heading-M-1'>
-              <span className='text-blue-500'>Vizhen</span> Timeline
+              <span className='text-blue-500'>Dana</span> Timeline
             </p>
           </div>
           {/* flaoting cubes */}

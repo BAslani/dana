@@ -30,7 +30,7 @@ export default function DataCenterBanner() {
       mountRef.current.clientHeight
     )
     renderer.setPixelRatio(window.devicePixelRatio)
-    renderer.setClearColor(0x000000, 0)
+    renderer.setClearColor(0x000000, 0) // Transparent background
     mountRef.current.appendChild(renderer.domElement)
 
     // Lights
@@ -100,12 +100,14 @@ export default function DataCenterBanner() {
 
     scene.add(group)
 
-    // Floor plane (for subtle reflection look)
+    // Floor plane (made transparent)
     const floorGeometry = new THREE.PlaneGeometry(100, 100)
     const floorMaterial = new THREE.MeshStandardMaterial({
       color: 0x000000,
       metalness: 0.9,
       roughness: 0.5,
+      transparent: true,
+      opacity: 0, // Fully transparent
     })
     const floor = new THREE.Mesh(floorGeometry, floorMaterial)
     floor.rotation.x = -Math.PI / 2
@@ -153,5 +155,5 @@ export default function DataCenterBanner() {
     }
   }, [])
 
-  return <div ref={mountRef} className='w-full h-96 pt-40' />
+  return <div ref={mountRef} className='w-full h-96 pt-40' style={{ background: 'transparent' }} />
 }

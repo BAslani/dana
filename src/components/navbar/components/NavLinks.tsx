@@ -1,5 +1,3 @@
-import { usePathname } from 'next/navigation'
-
 import { navLinkList } from '../data/navData'
 import NavLink from './NavLink'
 

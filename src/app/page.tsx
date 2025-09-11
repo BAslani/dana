@@ -14,7 +14,7 @@ import TimeLine from '@/components/timeline'
 
 export default async function page() {
   return (
-    <div className='bg-black'>
+      <div className='bg-gradient-to-b from-0% to-20% from-black to-[#0b3157]'>
       <Navbar />
       <DataCenterBanner />
       {/* <AboutUsHero /> */}
@@ -22,9 +22,9 @@ export default async function page() {
       <AboutUsIntro />
       <DanaServices hasDiagonal={false} />
       <div className='my-20 flex flex-col gap-10'>
-        <Clients DefaultStudio={'venture'} />
-        <Clients DefaultStudio={'tech'} />
-        <Clients DefaultStudio={'media'} />
+        <Clients DefaultStudio={'experiences'} />
+        <Clients DefaultStudio={'accreditors'} />
+        <Clients DefaultStudio={'partenships'} />
       </div>
       <OtherBrands />
       <TimeLine />

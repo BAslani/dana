@@ -12,7 +12,7 @@ export default function NavLink({ title, href, onLink }: Props) {
       scroll={false}
       href={href}
       onClick={onLink}
-      className='font-railway md:text-body-L-2 lg:text-body-XL-2 transition-all duration-300 hover:text-blue-300'
+      className='transition-all duration-300 hover:text-blue-300 text-white'
     >
       {title}
     </Link>

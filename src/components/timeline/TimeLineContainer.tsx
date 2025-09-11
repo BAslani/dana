@@ -68,7 +68,7 @@ export default function TimeLineContainer({ year }: Props) {
     >
       <p className='text-yellow-500 text-xl md:text-2xl'>{year}</p>
 
-      <div className='w-full rounded-3xl border border-gray-600 bg-gray-950 p-6'>
+      <div className='w-full rounded-3xl border border-gray-600 p-6'>
         {/* desktop */}
         <div className='hidden sm:grid grid-cols-3 gap-4'>
           {projects.map((project, idx) => (
