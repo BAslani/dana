@@ -1,11 +1,9 @@
 'use client'
 
-import classNames from 'classnames'
-
 import GlassStartupCard from './components/GlassStartupCard'
 
 type Props = {
-  DefaultStudio?: 'experiences' | 'accreditors' | 'partenships'
+  DefaultStudio?: 'experiences' | 'accreditors' | 'partnerships'
 }
 
 export default function Clients({ DefaultStudio = 'experiences' }: Props) {
@@ -24,7 +22,7 @@ export default function Clients({ DefaultStudio = 'experiences' }: Props) {
               <span className='text-white'>Accreditors</span>
             </p>
           )}
-          {selectedStudio === 'partenships' && (
+          {selectedStudio === 'partnerships' && (
             <p>
               <span className='text-white'>Partnerships</span>
             </p>

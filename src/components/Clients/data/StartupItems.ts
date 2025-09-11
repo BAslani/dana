@@ -1,280 +1,172 @@
-export const ventureList = [
+export const experiencesList = [
   {
-    title: 'FC Motivate',
+    title: 'Iran Zamin Bank',
     img: {
-      src: '/png/fcmotivate.png',
-      h: 66,
-      w: 66
+      src: '/png/iran-zamin-icon.png',
+      h: 30,
+      w: 140,
     },
-    link: 'https://fcmotivate.com/'
-  },
-  {
-    title: 'DANAAI',
-    img: {
-      src: '/png/danaai.png',
-      h: 62,
-      w: 68
-    },
-    link: 'https://danaai.ir/'
-  },
-  {
-    title: 'Mama Mindset',
-    img: {
-      src: '/png/mama.png',
-      h: 62,
-      w: 68
-    },
-    link: ''
-  },
-  {
-    title: 'Tehran Listing',
-    img: {
-      src: '/png/tehran-listing-icon.png',
-      h: 40,
-      w: 150
-    },
-    link: 'https://tehran-listing.com/'
-  },
-  {
-    title: 'Noobspay',
-    img: {
-      src: '/png/noobspay-icon.png',
-      h: 69,
-      w: 70
-    },
-    link: ''
-  },
-  {
-    title: 'Hypogenic',
-    img: {
-      src: '/png/hypogenic-icon.png',
-      h: 40,
-      w: 140
-    },
-    link: 'https://hypogenic.io/'
-  },
-  {
-    title: 'Pill Pal',
-    img: {
-      src: '/png/pilpal-icon.png',
-      h: 34,
-      w: 127
-    },
-    link: 'https://pillpal.ai/'
+    link: 'https://www.izbank.ir/',
   },
   {
     title: 'Iran Zamin Bank',
     img: {
       src: '/png/iran-zamin-icon.png',
       h: 30,
-      w: 140
+      w: 140,
     },
-    link: 'https://www.izbank.ir/'
+    link: 'https://www.izbank.ir/',
   },
   {
-    title: 'Circle of Hope',
+    title: 'Iran Zamin Bank',
     img: {
-      src: '/png/circle-of-hope-icon.png',
-      h: 38,
-      w: 110
+      src: '/png/iran-zamin-icon.png',
+      h: 30,
+      w: 140,
     },
-    link: 'https://circleofhope.io/'
+    link: 'https://www.izbank.ir/',
   },
   {
-    title: 'Mintii',
+    title: 'Iran Zamin Bank',
     img: {
-      src: '/png/mintii-icon.png',
-      h: 60,
-      w: 60
+      src: '/png/iran-zamin-icon.png',
+      h: 30,
+      w: 140,
     },
-    link: 'https://mintii.io/'
+    link: 'https://www.izbank.ir/',
   },
   {
-    title: 'Blockchainable',
+    title: 'Iran Zamin Bank',
     img: {
-      src: '/png/blockchainable.png',
-      h: 40,
-      w: 100
+      src: '/png/iran-zamin-icon.png',
+      h: 30,
+      w: 140,
     },
-    link: 'https://blockchainable.io/'
-  }
+    link: 'https://www.izbank.ir/',
+  },
+  {
+    title: 'Iran Zamin Bank',
+    img: {
+      src: '/png/iran-zamin-icon.png',
+      h: 30,
+      w: 140,
+    },
+    link: 'https://www.izbank.ir/',
+  },
 ]
 
-export const techList = [
+export const accreditorsList = [
   {
-    title: 'Sharax Group',
+    title: 'Iran Zamin Bank',
     img: {
-      src: '/png/sharax-icon.png',
-      h: 37,
-      w: 130
+      src: '/png/iran-zamin-icon.png',
+      h: 30,
+      w: 140,
     },
-    link: 'https://sharaxgroup.com/'
+    link: 'https://www.izbank.ir/',
   },
   {
-    title: 'Adaptor',
+    title: 'Iran Zamin Bank',
     img: {
-      src: '/png/adaptor-icon.png',
-      h: 66,
-      w: 60
+      src: '/png/iran-zamin-icon.png',
+      h: 30,
+      w: 140,
     },
-    link: 'https://adaptorrecords.com/'
+    link: 'https://www.izbank.ir/',
   },
   {
-    title: 'Dubai Listing',
+    title: 'Iran Zamin Bank',
     img: {
-      src: '/png/dubai-listing.png',
-      h: 40,
-      w: 150
+      src: '/png/iran-zamin-icon.png',
+      h: 30,
+      w: 140,
     },
-    link: 'https://dubai-listing.com/'
+    link: 'https://www.izbank.ir/',
   },
   {
-    title: 'Tangie',
+    title: 'Iran Zamin Bank',
     img: {
-      src: '/png/tangie.png',
-      h: 35,
-      w: 95
+      src: '/png/iran-zamin-icon.png',
+      h: 30,
+      w: 140,
     },
-    link: 'https://tangie.productions/'
+    link: 'https://www.izbank.ir/',
   },
   {
-    title: 'Choopan',
+    title: 'Iran Zamin Bank',
     img: {
-      src: '/png/choopan.png',
-      h: 43,
-      w: 90
+      src: '/png/iran-zamin-icon.png',
+      h: 30,
+      w: 140,
     },
-    link: 'https://choopan-co.ir/'
+    link: 'https://www.izbank.ir/',
   },
-  {
-    title: 'Bagit',
-    img: {
-      src: '/png/bagit.png',
-      h: 43,
-      w: 75
-    },
-    link: ''
-  },
-  {
-    title: 'Amirzadegan',
-    img: {
-      src: '/png/amirzadegan.png',
-      h: 43,
-      w: 110
-    },
-    link: 'https://amirzadegan.co/'
-  },
-  {
-    title: 'Behkooshan',
-    img: {
-      src: '/png/behkooshan.png',
-      h: 43,
-      w: 130
-    },
-    link: 'https://behkooshan.ir/'
-  },
-  {
-    title: 'Innovationtour',
-    img: {
-      src: '/png/innovationtour.png',
-      h: 43,
-      w: 110
-    },
-    link: 'https://innovationtour.ir/'
-  }
 ]
 
-export const mediaList = [
+export const partenshipsList = [
   {
-    title: 'Mimas',
+    title: 'Iran Zamin Bank',
     img: {
-      src: '/png/mi-mas-icon.png',
-      h: 35,
-      w: 130
+      src: '/png/iran-zamin-icon.png',
+      h: 30,
+      w: 140,
     },
-    link: 'https://mimas.ir/'
+    link: 'https://www.izbank.ir/',
   },
   {
-    title: 'Golestani Watch',
+    title: 'Iran Zamin Bank',
     img: {
-      src: '/png/golestani-watch.png',
-      h: 35,
-      w: 130
+      src: '/png/iran-zamin-icon.png',
+      h: 30,
+      w: 140,
     },
-    link: 'https://www.instagram.com/golestani_watch?igsh=YmdtcXlrOGs0c2I='
+    link: 'https://www.izbank.ir/',
   },
   {
-    title: 'Tangie',
+    title: 'Iran Zamin Bank',
     img: {
-      src: '/png/tangie.png',
-      h: 35,
-      w: 95
+      src: '/png/iran-zamin-icon.png',
+      h: 30,
+      w: 140,
     },
-    link: 'https://tangie.productions/'
+    link: 'https://www.izbank.ir/',
   },
   {
-    title: 'Chaaharchoob',
+    title: 'Iran Zamin Bank',
     img: {
-      src: '/png/chaharchob-icon.png',
-      h: 67,
-      w: 72
+      src: '/png/iran-zamin-icon.png',
+      h: 30,
+      w: 140,
     },
-    link: 'https://chahar-choob.ir/'
+    link: 'https://www.izbank.ir/',
   },
   {
-    title: 'Asbran',
+    title: 'Iran Zamin Bank',
     img: {
-      src: '/png/asbran-icon.png',
-      h: 40,
-      w: 80
+      src: '/png/iran-zamin-icon.png',
+      h: 30,
+      w: 140,
     },
-    link: 'https://www.instagram.com/asb.ran?igsh=MXV2OGNkeHNnZzV6aw=='
+    link: 'https://www.izbank.ir/',
   },
   {
-    title: 'Alibaba',
+    title: 'Iran Zamin Bank',
     img: {
-      src: '/png/alibaba.png',
-      h: 35,
-      w: 105
+      src: '/png/iran-zamin-icon.png',
+      h: 30,
+      w: 140,
     },
-    link: 'https://www.alibaba.ir/'
+    link: 'https://www.izbank.ir/',
   },
   {
-    title: 'Digikala MAG',
+    title: 'Iran Zamin Bank',
     img: {
-      src: '/png/digi-icon.png',
-      h: 40,
-      w: 122
+      src: '/png/iran-zamin-icon.png',
+      h: 30,
+      w: 140,
     },
-    link: 'https://www.digikala.com/'
+    link: 'https://www.izbank.ir/',
   },
-  {
-    title: 'Behkooshan',
-    img: {
-      src: '/png/behkooshan.png',
-      h: 43,
-      w: 130
-    },
-    link: 'https://behkooshan.ir/'
-  },
-  {
-    title: 'Choopan',
-    img: {
-      src: '/png/choopan.png',
-      h: 43,
-      w: 90
-    },
-    link: 'https://choopan-co.ir/'
-  },
-  {
-    title: 'Atrbaran',
-    img: {
-      src: '/png/atrbaran.png',
-      h: 43,
-      w: 110
-    },
-    link: 'http://atrbaran.ir/'
-  }
 ]
 
 // ---------------------------------------------------- these projects were not in the provided list

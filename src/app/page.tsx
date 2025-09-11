@@ -21,7 +21,7 @@ export default async function page() {
       <div id='experiences' className='my-20 flex flex-col gap-10'>
         <Clients DefaultStudio={'experiences'} />
         <Clients DefaultStudio={'accreditors'} />
-        <Clients DefaultStudio={'partenships'} />
+        <Clients DefaultStudio={'partnerships'} />
       </div>
       <OtherBrands />
       <TimeLine />

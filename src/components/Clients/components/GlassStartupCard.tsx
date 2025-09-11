@@ -1,32 +1,33 @@
-import classNames from 'classnames'
 import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 
-import { mediaList, techList, ventureList } from '../data/StartupItems'
+import {
+  partenshipsList,
+  accreditorsList,
+  experiencesList,
+} from '../data/StartupItems'
 
 type Props = {
-  studio: 'experiences' | 'accreditors' | 'partenships'
+  studio: 'experiences' | 'accreditors' | 'partnerships'
 }
 
 export default function GlassStartupCard({ studio }: Props) {
   const lists = {
-    venture: ventureList,
-    tech: techList,
-    media: mediaList,
+    experiences: experiencesList,
+    accreditors: accreditorsList,
+    partnerships: partenshipsList,
   }
   return (
     <div className='relative mb-10 mt-10'>
       <div className='mx-auto grid grid-cols-2 gap-x-4 gap-y-16 rounded-xl border border-white/25 px-6 py-10 backdrop-blur-sm sm:max-w-[584px] sm:grid-cols-3 md:max-w-[1000px] md:px-[190px] md:py-[60px] lg:mx-auto lg:max-w-[960px] lg:px-40'>
-        {lists['venture'].map(({ title, img, link }, index) => {
+        {lists[studio].map(({ img }, index) => {
           return (
             <React.Fragment key={index}>
-              
-                <div
-                  key={index}
-                  className='flex  h-[110px] flex-col justify-between gap-4 sm:items-center'
-                >
-                  {/* <div className='flex items-center gap-4 sm:justify-center'>
+              <div
+                key={index}
+                className='flex  h-[110px] flex-col justify-between gap-4 sm:items-center'
+              >
+                {/* <div className='flex items-center gap-4 sm:justify-center'>
                     <div className='relative size-6'>
                       <div
                         className={classNames(
@@ -44,15 +45,14 @@ export default function GlassStartupCard({ studio }: Props) {
                       {title}
                     </h5>
                   </div> */}
-                  <Image
-                    alt=''
-                    className='md:scale-125'
-                    src={img.src}
-                    height={img.h}
-                    width={img.w}
-                  />
-                </div>
-              
+                <Image
+                  alt=''
+                  className='md:scale-125'
+                  src={img.src}
+                  height={img.h}
+                  width={img.w}
+                />
+              </div>
             </React.Fragment>
           )
         })}
