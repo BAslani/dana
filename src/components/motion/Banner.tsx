@@ -45,18 +45,20 @@ export default function DataCenterBanner() {
     scene.add(whiteLight)
 
     // Server rack base geometry
-    const rackGeometry = new THREE.BoxGeometry(1, 3, 1.5)
-    const rackMaterial = new THREE.MeshStandardMaterial({
-      color: 0x111111,
-      metalness: 0.8,
-      roughness: 0.3,
-    })
+    // const rackGeometry = new THREE.BoxGeometry(1, 3, 1.5)
+    // const rackMaterial = new THREE.MeshStandardMaterial({
+    //   color: 0x111111,
+    //   metalness: 0.8,
+    //   roughness: 0.3,
+    // })
 
     // LED panel geometry
     const ledGeometry = new THREE.BoxGeometry(0.8, 0.05, 0.05)
     const ledMaterialOn = new THREE.MeshStandardMaterial({
       color: 0x00d8ff,
-      emissive: 0x00d8ff,
+      emissive: 0xffffff,
+      // color: 0x00d8ff,
+      // emissive: 0x00d8ff,
       emissiveIntensity: 0.8,
       metalness: 0.2,
       roughness: 0.2,
@@ -74,13 +76,13 @@ export default function DataCenterBanner() {
 
     // Create grid of racks with LED panels
     const rows = 4
-    const cols = 8
+    const cols = 10
     for (let i = 0; i < rows; i++) {
       for (let j = 0; j < cols; j++) {
         const rackGroup = new THREE.Group()
 
-        const rack = new THREE.Mesh(rackGeometry, rackMaterial)
-        rackGroup.add(rack)
+        // const rack = new THREE.Mesh(rackGeometry, rackMaterial)
+        // rackGroup.add(rack)
 
         // Add vertical stack of LEDs
         for (let k = 0; k < 10; k++) {

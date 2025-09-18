@@ -12,6 +12,7 @@ import TimeLine from '@/components/timeline'
 
 export default async function page() {
   return (
+    // <div className='bg-gradient-to-b from-0% to-20% from-black to-[#0b3157]'>
     <div className='bg-[#0b3157]'>
       <Navbar />
       <DataCenterBanner />
@@ -23,10 +24,10 @@ export default async function page() {
         <Clients DefaultStudio={'accreditors'} />
         <Clients DefaultStudio={'partnerships'} />
       </div> */}
-      <OtherBrands />
-      <TimeLine />
+      {/* <OtherBrands /> */}
+      {/* <TimeLine /> */}
       <OurTeam />
-      <JobAccordion />
+      {/* <JobAccordion /> */}
       <Footer />
     </div>
   )

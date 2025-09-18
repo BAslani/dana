@@ -7,16 +7,16 @@ export const navLinkList = [
     title: 'Services',
     href: `#services`,
   },
-  {
-    title: 'Experiences',
-    href: `#experiences`,
-  },
+  // {
+  //   title: 'Experiences',
+  //   href: `#experiences`,
+  // },
   {
     title: 'Our Team',
     href: '#our_team',
   },
-  {
-    title: 'Careers',
-    href: '#careers',
-  },
+  // {
+  //   title: 'Careers',
+  //   href: '#careers',
+  // },
 ]

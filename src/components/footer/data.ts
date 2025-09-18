@@ -1,10 +1,9 @@
 export const footerLinks = [
-  { name: 'Venture Studio', link: '/venture' },
-  { name: 'Blog', link: '/blogs' },
-  { name: 'Tech Studio', link: '/tech' },
-  { name: 'About Us', link: '/about-us' },
-  { name: 'Media Studio', link: '/media' },
-  { name: 'Contact Us', link: '/contact-us' }
+  { name: 'About us', link: '#about_us' },
+  { name: 'Services', link: '#services' },
+  // { name: 'Experiences', link: '#experiences' },
+  { name: 'Our Team', link: '#our_team' },
+  // { name: 'Careers', link: '#careers' }
 ]
 
 export const socialMedias = [

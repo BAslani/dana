@@ -15,7 +15,7 @@ export default function TimeLine() {
           {/* title section */}
           <div className='mb-12 flex items-center justify-center gap-0 sm:mb-20 md:gap-3'>
             <p className='text-heading-S-2 md:text-heading-M-1'>
-              <span className='text-blue-500'>Dana</span> Timeline
+              <span className='text-blue-500'>Dana Core</span> Timeline
             </p>
           </div>
           {/* flaoting cubes */}

@@ -49,7 +49,7 @@ export default function DanaServices({ hasDiagonal }: Props) {
         <div className='px-6'>
           <h1 className='my-10 text-center text-xl md:text-2xl lg:text-3xl leading-[19px] sm:leading-[24px] md:leading-[28px] lg:mb-10 lg:leading-[43px]'>
             <span style={{ color: designAndImplementationService.theme }}>
-              Dana
+              Dana Core
             </span>{' '}
             Services
           </h1>

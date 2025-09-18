@@ -12,7 +12,7 @@ export default function AboutUsIntro() {
       />
       <div className='size-full flex-col justify-center md:flex'>
         <div className='flex flex-col gap-[250px] py-6 sm:gap-[324px] md:mx-auto md:h-[517px] md:max-w-screen-lg md:flex-row md:items-center md:gap-24 lg:gap-40 lg:h-[758px] lg:py-10'>
-          <div className='mx-auto w-[280px] bg-gradient-to-bl from-transparent via-transparent to-[#507CF820] p-px backdrop-blur-md sm:w-[430px] md:w-[340px] md:self-end lg:w-[640px]'>
+          <div className='mx-auto rounded-xl w-[280px] bg-gradient-to-bl from-transparent via-transparent to-[#507CF820] p-px backdrop-blur-md sm:w-[430px] md:w-[340px] md:self-end lg:w-[640px]'>
             <div className='flex size-full flex-col items-center gap-[10px] px-6 py-4 md:gap-6'>
               <h3 className='text-2xl text-blue-400'>
                 Mission and Vision Statement
@@ -31,10 +31,10 @@ export default function AboutUsIntro() {
               </p>
             </div>
           </div>
-          <div className='mx-auto flex w-[280px] flex-col items-center gap-[10px] px-6 py-4 backdrop-blur-md sm:w-[430px] md:w-[340px] md:gap-6 md:self-start lg:w-[640px]'>
+          <div className='mx-auto flex w-[280px] rounded-xl flex-col items-center gap-[10px] px-6 py-4 backdrop-blur-md sm:w-[430px] md:w-[340px] md:gap-6 md:self-start lg:w-[640px]'>
             <h3 className='text-2xl text-blue-400'>About our story</h3>
             <p className='text-justify text-body-S-2 text-gray-50 sm:text-body-M-2 md:text-body-L-2 lg:text-body-XL-2'>
-              Dana Innovation Core Engineering, a knowledge-driven IT company,
+              Dana Core Innovation Core Engineering, a knowledge-driven IT company,
               specializes in data center infrastructure. With a team of skilled
               engineers, it offers innovative and adaptable solutions to meet
               project needs. By addressing industry gaps through thorough

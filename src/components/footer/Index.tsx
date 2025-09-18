@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import { footerLinks, socialMedias } from './data'
+import NavLink from '../navbar/components/NavLink'
 
 export default function Footer() {
   return (
@@ -15,7 +16,7 @@ export default function Footer() {
         <div className='flex flex-col items-center gap-[22px] sm:items-start'>
           
           <h1 className='text-center text-heading-M-4 sm:max-w-[368px] sm:text-left md:max-w-[560px] md:text-heading-L-4 lg:max-w-[546px] lg:text-heading-XL-4 lg:leading-[33px]'>
-            “Innovate, create, and see beyond ordinary with Dana”
+            “Innovate, create, and see beyond ordinary with Dana Core”
           </h1>
           <div className='flex items-center gap-[16px]'>
             {socialMedias.map(({ icon, link, alt }, index) => (
@@ -35,20 +36,25 @@ export default function Footer() {
         <div className='flex flex-col items-center justify-center  sm:items-stretch'>
           <div className='grid grid-cols-2 grid-rows-3 gap-x-[40px] gap-y-[20px] pl-4 sm:gap-x-[48px] sm:pl-0 lg:gap-x-[120px]'>
             {footerLinks.map(({ link, name }, index) => (
-              <Link
-                scroll={false}
+              <NavLink 
                 href={link}
+                title={name}
                 key={index}
-                className='text-body-M-3 md:text-body-L-3 lg:text-body-XL-3'
-              >
-                {name}
-              </Link>
+              />
+              // <Link
+              //   scroll={false}
+              //   href={link}
+              //   key={index}
+              //   className='text-body-M-3 md:text-body-L-3 lg:text-body-XL-3'
+              // >
+              //   {name}
+              // </Link>
             ))}
           </div>
         </div>
       </section>
       <div className='pb-[40px] pt-[15px] text-center text-gray-400'>
-        &copy; {new Date().getFullYear()} Dana All right reserved.
+        &copy; {new Date().getFullYear()} Dana Core All right reserved.
       </div>
     </footer>
   )

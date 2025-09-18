@@ -25,16 +25,4 @@ export const carouselImgs = [
     position: 'Architect, BIM Coordinator',
     name: 'Nazanin Habibi',
   },
-  {
-    imagePath: '/personel/nazanin_habibi.jpg',
-    team: 'venture',
-    position: 'Architect, BIM Coordinator',
-    name: 'Nazanin Habibi',
-  },
-  {
-    imagePath: '/personel/nazanin_habibi.jpg',
-    team: 'venture',
-    position: 'Architect, BIM Coordinator',
-    name: 'Nazanin Habibi',
-  },
 ]
