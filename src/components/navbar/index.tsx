@@ -35,7 +35,7 @@ export default function Navbar() {
         className={classNames(
           'transition-all duration-300 w-full px-6',
           isSticky
-            ? 'py-3 sm:py-2 md:py-4 bg-black/60 backdrop-blur-md'
+            ? 'py-3 sm:py-2 md:py-4 bg-black/5 backdrop-blur-md'
             : 'sm:py-6 md:py-10 py-6'
         )}
       >

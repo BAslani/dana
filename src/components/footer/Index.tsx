@@ -13,13 +13,7 @@ export default function Footer() {
         'flex gap-[40px] mx-auto flex-col sm:flex-row justify-between  lg:mt-[-10.1rem] sm:mt-[-5.5rem] md:mt-[-9.5rem] mt-[-5rem] pb-[24px] pt-[120px] md:pt-[200px] sm:pt-[130px] lg:pt-[280px]  text-white lg:max-w-screen-lg'
       >
         <div className='flex flex-col items-center gap-[22px] sm:items-start'>
-          <Image
-            src='/svg/Dana-logo.svg'
-            width={132}
-            height={30}
-            alt='vhizen logo'
-            className='md:h-[41px] md:w-[180px] lg:h-[47px] lg:w-[206px]'
-          />
+          
           <h1 className='text-center text-heading-M-4 sm:max-w-[368px] sm:text-left md:max-w-[560px] md:text-heading-L-4 lg:max-w-[546px] lg:text-heading-XL-4 lg:leading-[33px]'>
             “Innovate, create, and see beyond ordinary with Dana”
           </h1>
