@@ -2,11 +2,7 @@ import Image from 'next/image'
 
 import type { TooltipIconProps } from './type'
 
-export default function TooltipIcon({
-  title,
-  iconGroup,
-  theme,
-}: TooltipIconProps) {
+export default function TooltipIcon({ iconGroup, theme }: TooltipIconProps) {
   return (
     <div className='flex items-center justify-between gap-2 '>
       {iconGroup.map(({ icon, iconHover, tooltip }, index) => (

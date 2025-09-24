@@ -58,7 +58,9 @@ export default function Navbar() {
           <div>
             <div className='hidden md:block md:w-36 lg:w-48'>
               <ButtonSkewed
-                onClick={() => console.log('clicked')}
+                onClick={() => {
+                  window.location.href = 'tel:+989126786785'
+                }}
                 bgColor='blue300'
                 textColor='gray950'
                 title='Get in touch'

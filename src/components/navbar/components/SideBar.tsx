@@ -23,7 +23,7 @@ export default function SideBar({ showDrawer, onLink }: Props) {
           textColor='gray950'
           title='Get in touch'
           onClick={() => {
-            router.push('/contact-us')
+            window.location.href = 'tel:+989126786785'
           }}
         />
       </div>

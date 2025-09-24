@@ -46,7 +46,7 @@ export default function NavLink({ title, href, onClick }: Props) {
         // accessibility: focus the target so keyboard/screen-reader users know where we are
         try {
           target.setAttribute('tabindex', '-1')
-          ;(target as HTMLElement).focus({ preventScroll: true } as any)
+          ;(target as HTMLElement).focus({ preventScroll: true })
         } catch {
           // ignore focus failures on older browsers
         }
