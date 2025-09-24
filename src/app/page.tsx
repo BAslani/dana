@@ -1,14 +1,10 @@
 import AboutUsInfo from '@/components/aboutUs/AboutUsInfo'
 import AboutUsIntro from '@/components/aboutUs/AboutUsIntro'
-import Clients from '@/components/Clients'
 import DanaServices from '@/components/danaServices'
 import Footer from '@/components/footer/Index'
-import JobAccordion from '@/components/jobAccorion'
 import DataCenterBanner from '@/components/motion/Banner'
 import Navbar from '@/components/navbar'
-import OtherBrands from '@/components/otherBrands/Index'
-import OurTeam from '@/components/ourTeam'
-import TimeLine from '@/components/timeline'
+import NewTeamSection from '@/components/ourTeam/NewTeamSection'
 
 export default async function page() {
   return (
@@ -26,8 +22,9 @@ export default async function page() {
       </div> */}
       {/* <OtherBrands /> */}
       {/* <TimeLine /> */}
-      <OurTeam />
+      {/* <OurTeam /> */}
       {/* <JobAccordion /> */}
+      <NewTeamSection />
       <Footer />
     </div>
   )
