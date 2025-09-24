@@ -47,8 +47,8 @@ export default function Navbar() {
           >
             <Image
               alt='logo'
-              width={200}
-              height={45}
+              width={90}
+              height={10}
               src={'/png/Dana-logo.png'}
             />
           </Link>
